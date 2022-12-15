@@ -1,0 +1,13 @@
+SalesforceSetupAuditTrail_CL
+| extend 
+        Action=column_ifexists('action_s',''),
+        CreatedById=column_ifexists('created_by_id_s',''),
+        CreatedDate=column_ifexists('created_date_s',''),
+        CreatedByContext=column_ifexists('created_by_context_s',''),
+        CreatedByIssuer=column_ifexists('created_by_issuer_s',''),
+        DelegateUser=column_ifexists('delegate_user_s',''),
+        Display=column_ifexists('display_s',''),
+        Id=column_ifexists('id_s',''),
+        ResponsibleNamespacePrefix=column_ifexists('responsible_namespace_prefix_s',''),
+        Section=column_ifexists('section_s','')
+| project-away  *_s
