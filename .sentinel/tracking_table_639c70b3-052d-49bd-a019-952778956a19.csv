@@ -1,3 +1,4 @@
 FileName, CommitSha
 sentinel-deployment.config,a9f93fa7513aafa26ef26c5244c5ffcf249fea9d
+AnalyticsRule/AccountCreatedDeletedByNonApprovedUser.json,56c88a824b8cdf282ab0b275b334ad99763b4737
 
